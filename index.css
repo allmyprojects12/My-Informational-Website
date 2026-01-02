@@ -159,6 +159,7 @@ justify-content: space-around; display: flex;
 
 .pro {
     display: flex;
+    align-items: center;
 }
 
 .project_card {
