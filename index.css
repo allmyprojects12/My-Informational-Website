@@ -129,6 +129,7 @@ header {
     font-weight: bold;
     margin-bottom: 40px;
 }
+.con_num a span:hover{color: blue;}
 .personal_info{
 justify-content: space-around; display: flex;
 }
@@ -171,11 +172,11 @@ justify-content: space-around; display: flex;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
-    transition: 0.7s ease;
+    
 }
 
 .project_card:hover {
-    transform: scale(0.99);
+    background-color: #02264d;
 }
 
 .project_title {
@@ -194,15 +195,18 @@ justify-content: space-around; display: flex;
 }
 
 .paragraph {
-    max-width: 600px;
+    max-width:100%;
+    font-weight: 540;
 }
 
 .main-footer {
-    text-align: center;
+    display: flex;
+justify-content: space-between;
     padding: 20px;
     background-color: #0056b3;
     color: white;
     margin-top: 30px;
+    align-items: center;
 }
 
  
@@ -230,7 +234,7 @@ justify-content: space-around; display: flex;
         text-align: center;
 
 }
-.pro{flex-direction: column-reverse;
+.pro{flex-direction: column;
         text-align: center;}
     .hero_section {
         flex-direction: column-reverse;
