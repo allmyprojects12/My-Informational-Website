@@ -10,7 +10,7 @@
     background-image: url('./background_2.webp');
     background-size: cover;
     background-attachment: fixed;
-    direction: rtl;
+
     color: #f7f8fa;
 }
 
@@ -29,41 +29,53 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    top: 0;
-  
+    z-index: 1000;
+
 }
 
 .logo {
-    flex: 1;
+
     text-align: right;
     color: #f7f8fa;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .navigation {
-    flex: 2;
+
     display: flex;
-   
     align-items: center;
 }
 
 .nav_links_section {
     display: flex;
     width: 60%;
-    gap: 10px;
+    gap: 12px;
 }
 
-.nav_links_section a{
-  
+.nav_links_section a {
+
     color: #fcfcfd;
     text-decoration: none;
-    font-weight:550;
+    font-weight: 550;
     white-space: nowrap;
     transition: 0.3s;
 }
-.nav_links_section a:hover{
+
+.lang {
+
+    color: #fcfcfd;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 3px;
+    white-space: nowrap;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+
+}
+
+.nav_links_section a:hover {
     color: #000000;
 }
 
@@ -72,14 +84,14 @@ header {
     min-height: 100vh;
     padding: 150px 50px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid #ddd;
 }
 
 .hero-title {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 600;
     color: #0056b3;
     margin-bottom: 20px;
@@ -91,6 +103,7 @@ header {
     border-radius: 50%;
     border: 5px #0056b3 solid;
     object-fit: cover;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
 }
 
 .btn {
@@ -120,6 +133,18 @@ header {
     padding: 50px 20px;
 }
 
+.sub_title {
+
+    width: 100%;
+    color: #0056b3;
+
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 .contact_title {
     background-color: #0056b3;
     color: #f7f8fa;
@@ -129,10 +154,16 @@ header {
     font-weight: bold;
     margin-bottom: 40px;
 }
-.con_num a span:hover{color: blue;}
-.personal_info{
-justify-content: space-around; display: flex;
+
+.con_num a span:hover {
+    color: blue;
 }
+
+.personal_info {
+    justify-content: space-around;
+    display: flex;
+}
+
 .section_title {
     font-weight: bold;
     color: #0056b3;
@@ -148,7 +179,66 @@ justify-content: space-around; display: flex;
 }
 
 
+.icon-style {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+}
 
+.skills_card:hover .icon-style {
+    transform: scale(1.1);
+}
+
+.fa-python {
+    color: #d7e696;
+}
+
+.fa-html5 {
+    color: #E34F26;
+}
+
+.fa-css3-alt {
+    color: #f2f5f7;
+}
+
+.fa-js {
+    color: #F7DF1E;
+}
+
+.fa-server {
+    color: #a8b9cc;
+}
+
+.Csharpe {
+    color: #9b4993;
+}
+
+.Cisco {
+    color: #dddfe0;
+}
+
+.fa-database {
+    color: #f80000;
+}
+
+.fa-code {
+    color: #007acc;
+}
+
+.skills_card {
+    background-color: #023f81;
+    border: 2px solid rgb(4, 15, 114);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+    min-height: 14rem;
+    width: 23rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+
+
+}
 
 .project_photo {
     width: 400px;
@@ -161,29 +251,36 @@ justify-content: space-around; display: flex;
 .pro {
     display: flex;
     align-items: center;
+
 }
 
 .project_card {
     background-color: #023f81;
-    border: 1px solid white;
+    border: 2px solid rgb(4, 15, 114);
+    box-shadow: 0 0 8px 2px rgba(255, 255, 255, 0.6);
     min-height: 14rem;
     width: 23rem;
 
     overflow: hidden;
     border-radius: 10px;
     margin: 20px;
-    
+
 }
 
 .project_card:hover {
     background-color: #02264d;
 }
 
-.project_title {
+.mixed_title {
     font-size: 1.2rem;
-    color: white;
+    font-weight: bold;
     margin-bottom: 30px;
+    display: inline-block;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 .card_imag {
     width: 100%;
@@ -195,25 +292,72 @@ justify-content: space-around; display: flex;
 }
 
 .paragraph {
-    max-width:100%;
+    font-size: 1.1rem;
+    max-width: 100%;
     font-weight: 540;
+}
+
+.contact_card {
+    padding: 20px;
+    background-color: #023f81;
+    border: 2px solid rgb(4, 15, 114);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+    min-height: 14rem;
+    width: 60%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+.form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f7f8fa;
+    color: #333;
+
+}
+
+
+
+.label {
+    display: block;
+    text-align: right;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-footer {
     display: flex;
-justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     background-color: #0056b3;
     color: white;
-    margin-top: 30px;
+    height: 20px;
     align-items: center;
 }
 
- 
+
 @media (max-width: 850px) {
 
     header {
-        padding: 0 20px;
+        padding: 0 10px;
         display: flex;
     }
 
@@ -221,21 +365,24 @@ justify-content: space-between;
         width: 40%;
     }
 
-.nav_links_section a{
-  
+    .nav_links_section a {
+
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
 
 
-    font-size:0.8rem;
-    font-weight:400;
-}
- 
-
-.personal_info{flex-direction: column;
+    .personal_info {
+        flex-direction: column;
         text-align: center;
 
-}
-.pro{flex-direction: column;
-        text-align: center;}
+    }
+
+    .pro {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .hero_section {
         flex-direction: column-reverse;
         text-align: center;
